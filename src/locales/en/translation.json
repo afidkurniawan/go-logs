@@ -1,0 +1,27 @@
+{
+  "home": {
+    "title": "Home"
+  },
+  "account": {
+    "logout": "Logout"
+  },
+  "error": {
+    "content": "Something went wrong."
+  },
+  "companies": {
+    "title": "Companies"
+  },
+  "notFound": {
+    "title": "Page Not Found",
+    "content": "Page not found."
+  },
+  "entities": {
+    "general": {
+      "Id": "Id",
+      "Name": "Name",
+      "Type": "Type",
+      "Npwp": "Npwp",
+      "Broker": "Broker"
+    }
+  }
+}

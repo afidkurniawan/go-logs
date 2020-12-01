@@ -1,0 +1,27 @@
+{
+  "home": {
+    "title": "Laman"
+  },
+  "account": {
+    "logout": "Keluar"
+  },
+  "error": {
+    "content": "Ada yang salah."
+  },
+  "companies": {
+    "title": "Perusahaan"
+  },
+  "notFound": {
+    "title": "Halaman Tidak Ditemukan",
+    "content": "Halaman tidak ditemukan."
+  },
+  "entities": {
+    "general": {
+      "Id": "Id",
+      "Name": "Nama",
+      "Type": "Jenis",
+      "Npwp": "Npwp",
+      "Broker": "Perantara"
+    }
+  }
+}
