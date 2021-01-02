@@ -79,3 +79,9 @@ export const topWizard = [
     prev: true
   }
 ];
+
+export const bottomWizard = [
+  { title: "B/L Information", active: true, next: true, prev: false },
+  { title: "Upload Document", active: false, next: true, prev: true },
+  { title: "Review Request", active: false, next: false, prev: true }
+];

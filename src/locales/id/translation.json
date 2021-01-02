@@ -10,7 +10,11 @@
       "title": "Tahapan untuk menyelesaikan DO Request"
     },
     "bottom": {
-      "title": "Permintaan DO Baru"
+      "title": "Permintaan DO Baru",
+      "shipingline": "Jalur Pengiriman",
+      "blinformation": "BL/Informasi",
+      "mblnumber": "Nomor MBL/HBL",
+      "check": "Periksa"
     }
   },
   "account": {

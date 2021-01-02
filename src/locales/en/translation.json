@@ -10,7 +10,11 @@
       "title": "These are steps to complete DO Request"
     },
     "bottom": {
-      "title": "Create New DO Request"
+      "title": "Create New DO Request",
+      "shipingline": "Shipping Line",
+      "blinformation": "BL/Information",
+      "mblnumber": "MBL/HBL Number",
+      "check": "Check"
     }
   },
   "account": {

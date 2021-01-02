@@ -1,20 +1,10 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
 import { translations } from "../../../locales/i18n";
-
-import {
-  Container,
-  Title,
-  Row,
-  Column,
-  Icon,
-  Item,
-  ItemTitle,
-  Circle,
-  Number,
-  Rectangle
-} from "./WizardTop";
 import { topWizard } from "../../../lib/Constants";
+
+import { Title, Row, Column, Item, ItemTitle } from "./Wizard";
+import { Container, Icon, Circle, Number, Rectangle } from "./WizardTop";
 
 export default function Top() {
   const { t } = useTranslation();
