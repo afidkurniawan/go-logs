@@ -18,6 +18,7 @@ import { HomePage } from "./containers/HomePage/Loadable";
 import { Companies } from "./containers/Companies/Loadable";
 import { NotFoundPage } from "./components/NotFoundPage/Loadable";
 import { Sidebar } from "./components/Sidebar/Loadable";
+import { Header } from "./components/Header/Loadable";
 
 import config from "../config";
 import PageOf from "./containers/PageOf";
@@ -46,6 +47,7 @@ export function App() {
 
       {/* <AuthProvider {...oidcConfig}> */}
       <Sidebar />
+      <Header />
       <Switch>
         <Route exact path="/" component={HomePage} />
         <Route
