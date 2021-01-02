@@ -8,7 +8,7 @@
 
 import * as React from "react";
 import Oidc from "oidc-client";
-import { AuthProvider } from "oidc-react";
+// import { AuthProvider } from "oidc-react";
 import { Helmet } from "react-helmet-async";
 import { Switch, Route, BrowserRouter } from "react-router-dom";
 
@@ -21,13 +21,13 @@ import { NotFoundPage } from "./components/NotFoundPage/Loadable";
 import config from "../config";
 import PageOf from "./containers/PageOf";
 
-const oidcConfig = {
-  authority: config.urls.identityServer,
-  redirectUri: config.app.url!.concat("/"),
-  clientId: config.app.id,
-  responseType: "code",
-  scope: "openid profile god"
-};
+// const oidcConfig = {
+//   authority: config.urls.identityServer,
+//   redirectUri: config.app.url!.concat("/"),
+//   clientId: config.app.id,
+//   responseType: "code",
+//   scope: "openid profile god"
+// };
 
 export function App() {
   if (config.app.isDevelopment) {
@@ -43,18 +43,18 @@ export function App() {
         <meta name="description" content="Go-Logs application" />
       </Helmet>
 
-      <AuthProvider {...oidcConfig}>
-        <Switch>
-          <Route exact path="/" component={HomePage} />
-          <Route
-            exact
-            strict
-            path={["/companies/:id(\\d+)/:action*", "/companies/:id(\\d+)?"]}
-            component={PageOf(Companies)}
-          />
-          <Route component={NotFoundPage} />
-        </Switch>
-      </AuthProvider>
+      {/* <AuthProvider {...oidcConfig}> */}
+      <Switch>
+        <Route exact path="/" component={HomePage} />
+        <Route
+          exact
+          strict
+          path={["/companies/:id(\\d+)/:action*", "/companies/:id(\\d+)?"]}
+          component={PageOf(Companies)}
+        />
+        <Route component={NotFoundPage} />
+      </Switch>
+      {/* </AuthProvider> */}
       <GlobalStyle />
     </BrowserRouter>
   );
