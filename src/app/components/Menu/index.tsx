@@ -1,5 +1,6 @@
 import React from "react";
 import { Container, MenuItem, Span, Icon, Title, Arrow } from "./Menu";
+import { menuSidebar } from "../../../lib/Constants";
 
 interface ICardProps {
   title?: string;
@@ -27,34 +28,15 @@ const MenuLink = (props: ICardProps) => (
 export default function index() {
   return (
     <Container>
-      <MenuLink
-        title="Dashboard"
-        icon={require("../../../assets/icons/dashboard.svg")}
-      />
-      <MenuLink
-        title="DO Online"
-        icon={require("../../../assets/icons/do.svg")}
-        hasChild={true}
-      />
-      <MenuLink
-        title="DO Request"
-        icon={require("../../../assets/icons/requestdo.svg")}
-        active={true}
-        child={true}
-      />
-      <MenuLink
-        title="My Transaction"
-        icon={require("../../../assets/icons/mytransaction.svg")}
-        child={true}
-      />
-      <MenuLink
-        title="System"
-        icon={require("../../../assets/icons/system.svg")}
-      />
-      <MenuLink
-        title="Logout"
-        icon={require("../../../assets/icons/logout.svg")}
-      />
+      {menuSidebar.map((key, i) => (
+        <MenuLink
+          title={key.title}
+          icon={key.icon}
+          active={key.active}
+          hasChild={key.hasChild}
+          child={key.child}
+        />
+      ))}
     </Container>
   );
 }
