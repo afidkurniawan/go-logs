@@ -17,6 +17,7 @@ import { GlobalStyle } from "styles/global-styles";
 import { HomePage } from "./containers/HomePage/Loadable";
 import { Companies } from "./containers/Companies/Loadable";
 import { NotFoundPage } from "./components/NotFoundPage/Loadable";
+import { Sidebar } from "./components/Sidebar/Loadable";
 
 import config from "../config";
 import PageOf from "./containers/PageOf";
@@ -44,6 +45,7 @@ export function App() {
       </Helmet>
 
       {/* <AuthProvider {...oidcConfig}> */}
+      <Sidebar />
       <Switch>
         <Route exact path="/" component={HomePage} />
         <Route
