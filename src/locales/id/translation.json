@@ -2,6 +2,17 @@
   "home": {
     "title": "Laman"
   },
+  "requestDO": {
+    "title": "Permintaan DO"
+  },
+  "wizard": {
+    "top": {
+      "title": "Tahapan untuk menyelesaikan DO Request"
+    },
+    "bottom": {
+      "title": "Permintaan DO Baru"
+    }
+  },
   "account": {
     "logout": "Keluar"
   },

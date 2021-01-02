@@ -2,6 +2,17 @@
   "home": {
     "title": "Home"
   },
+  "requestDO": {
+    "title": "Request DO"
+  },
+  "wizard": {
+    "top": {
+      "title": "These are steps to complete DO Request"
+    },
+    "bottom": {
+      "title": "Create New DO Request"
+    }
+  },
   "account": {
     "logout": "Logout"
   },

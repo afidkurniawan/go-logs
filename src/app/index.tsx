@@ -14,7 +14,8 @@ import { Switch, Route, BrowserRouter } from "react-router-dom";
 
 import { GlobalStyle } from "styles/global-styles";
 
-import { HomePage } from "./containers/HomePage/Loadable";
+// import { HomePage } from "./containers/HomePage/Loadable";
+import { RequestDO } from "./containers/DO/Loadable";
 import { Companies } from "./containers/Companies/Loadable";
 import { NotFoundPage } from "./components/NotFoundPage/Loadable";
 import { Sidebar } from "./components/Sidebar/Loadable";
@@ -49,7 +50,7 @@ export function App() {
       <Sidebar />
       <Header />
       <Switch>
-        <Route exact path="/" component={HomePage} />
+        <Route exact path="/" component={RequestDO} />
         <Route
           exact
           strict

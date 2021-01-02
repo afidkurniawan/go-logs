@@ -41,3 +41,41 @@ export const menuSidebar = [
     child: false
   }
 ];
+
+export const topWizard = [
+  {
+    title: "Request Form",
+    link: require("../assets/icons/iwizard1.svg"),
+    active: true,
+    next: true,
+    prev: false
+  },
+  {
+    title: "Confirmation",
+    link: require("../assets/icons/iwizard2.svg"),
+    active: false,
+    next: true,
+    prev: true
+  },
+  {
+    title: "Proforma Invoice",
+    link: require("../assets/icons/iwizard3.svg"),
+    active: false,
+    next: true,
+    prev: true
+  },
+  {
+    title: "Payment Confirmation",
+    link: require("../assets/icons/iwizard4.svg"),
+    active: false,
+    next: true,
+    prev: true
+  },
+  {
+    title: "DO Release",
+    link: require("../assets/icons/iwizard5.svg"),
+    active: false,
+    next: false,
+    prev: true
+  }
+];

@@ -2,7 +2,7 @@ import React from "react";
 import { Container, MenuItem, Span, Icon, Title, Arrow } from "./Menu";
 import { menuSidebar } from "../../../lib/Constants";
 
-interface ICardProps {
+interface Props {
   title?: string;
   active?: boolean;
   icon?: any;
@@ -10,7 +10,7 @@ interface ICardProps {
   child?: boolean;
 }
 
-const MenuLink = (props: ICardProps) => (
+const MenuLink = (props: Props) => (
   <aside>
     <MenuItem active={props.active} child={props.child}>
       <Span className="iconify" active={props.active} data-inline="false">
