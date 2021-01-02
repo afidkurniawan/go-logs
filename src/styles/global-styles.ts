@@ -5,20 +5,46 @@ export const GlobalStyle = createGlobalStyle`
   body {
     height: 100%;
     width: 100%;
+    background: #F4F4FF;
+    color: #111111;
+    margin: 0;
+    padding: 0;
   }
 
   body {
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: 'Raleway','Helvetica Neue', Helvetica, Arial, sans-serif;
   }
 
   #root {
     min-height: 100%;
     min-width: 100%;
   }
+  
+  .main-content{
+    top: 100px;
+    width: auto;
+    margin-left: 17rem;
+    position: relative;
+    padding: 0 4rem;
+  }
+
+  .panel-container{
+    display:flex;
+    background: #FFFFFF;
+    border-radius: 20px;
+  }
+
+  .panel-container-title{
+    display:flex;
+    color: rgba(17, 17, 17, 0.5);
+    font-size: 16px;
+    padding-top:15px;
+    padding-left:15px;
+  }
 
   p,
   label {
-    font-family: Georgia, Times, 'Times New Roman', serif;
+    font-family:  'Raleway', Georgia, Times, 'Times New Roman', serif;
     line-height: 1.5em;
   }
 
