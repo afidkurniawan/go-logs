@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
-import "./Datepicker.css";
+import "../../../styles/Datepicker.css";
 
 export default class DatePick extends Component {
   state = {

@@ -1,5 +1,13 @@
 import React from "react";
-import { Form, Group, Input, Icon, Label, Dropdown, Button } from "./Wizard";
+import {
+  Form,
+  Group,
+  Input,
+  Icon,
+  Label,
+  Dropdown,
+  Button
+} from "../../../styles/Wizard";
 import { DatePick } from "../Datepicker/Loadable";
 import { useTranslation } from "react-i18next";
 import { translations } from "../../../locales/i18n";

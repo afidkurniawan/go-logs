@@ -3,7 +3,7 @@ import { Helmet } from "react-helmet-async";
 import { useTranslation } from "react-i18next";
 import { translations } from "../../../locales/i18n";
 
-import { Container } from "./RequestDO";
+import { Container } from "../../../styles/RequestDO";
 import { Wizard } from "../../components/Wizard/Loadable";
 
 export default function DoRquest() {

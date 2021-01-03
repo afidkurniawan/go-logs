@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Logo, Image } from "./Sidebar";
+import { Container, Logo, Image } from "../../../styles/Sidebar";
 import { Menu } from "../Menu/Loadable";
 
 export default function index() {

@@ -3,8 +3,14 @@ import { useTranslation } from "react-i18next";
 import { translations } from "../../../locales/i18n";
 import { topWizard } from "../../../lib/Constants";
 
-import { Title, Row, Column, Item, ItemTitle } from "./Wizard";
-import { Container, Icon, Circle, Number, Rectangle } from "./WizardTop";
+import { Title, Row, Column, Item, ItemTitle } from "../../../styles/Wizard";
+import {
+  Container,
+  Icon,
+  Circle,
+  Number,
+  Rectangle
+} from "../../../styles/WizardTop";
 
 export default function Top() {
   const { t } = useTranslation();

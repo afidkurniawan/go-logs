@@ -1,5 +1,12 @@
 import React from "react";
-import { Container, MenuItem, Span, Icon, Title, Arrow } from "./Menu";
+import {
+  Container,
+  MenuItem,
+  Span,
+  Icon,
+  Title,
+  Arrow
+} from "../../../styles/Menu";
 import { menuSidebar } from "../../../lib/Constants";
 
 interface Props {

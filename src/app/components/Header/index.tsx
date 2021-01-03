@@ -15,7 +15,7 @@ import {
   LanguageNav,
   ProfileIcon,
   NavText
-} from "./Header";
+} from "../../../styles/Header";
 
 export default function Header() {
   const { t } = useTranslation();

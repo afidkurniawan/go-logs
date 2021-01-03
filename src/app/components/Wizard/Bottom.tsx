@@ -1,9 +1,14 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
 import { translations } from "../../../locales/i18n";
-import { Container, CircleInner, CircleOuter, Rectangle } from "./WizardBottom";
+import {
+  Container,
+  CircleInner,
+  CircleOuter,
+  Rectangle
+} from "../../../styles/WizardBottom";
 
-import { Title, Row, Column, Item, ItemTitle } from "./Wizard";
+import { Title, Row, Column, Item, ItemTitle } from "../../../styles/Wizard";
 import { bottomWizard } from "../../../lib/Constants";
 import FormBL from "./FormBL";
 
