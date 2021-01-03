@@ -3,42 +3,48 @@ export const menuSidebar = [
     title: "Dashboard",
     icon: require("../assets/icons/dashboard.svg"),
     hasChild: false,
-    active: false
+    active: false,
+    link: "/"
   },
   {
     title: "DO Online",
     icon: require("../assets/icons/do.svg"),
     hasChild: true,
     active: false,
-    child: false
+    child: false,
+    link: "#"
   },
   {
     title: "DO Request",
     icon: require("../assets/icons/requestdo.svg"),
     hasChild: false,
     active: true,
-    child: true
+    child: true,
+    link: "do-request"
   },
   {
     title: "My Transaction",
     icon: require("../assets/icons/mytransaction.svg"),
     hasChild: false,
     active: false,
-    child: true
+    child: true,
+    link: "my-transaction"
   },
   {
     title: "System",
     icon: require("../assets/icons/system.svg"),
     hasChild: false,
     active: false,
-    child: false
+    child: false,
+    link: "system"
   },
   {
     title: "Logout",
     icon: require("../assets/icons/logout.svg"),
     hasChild: false,
     active: false,
-    child: false
+    child: false,
+    link: "logout"
   }
 ];
 

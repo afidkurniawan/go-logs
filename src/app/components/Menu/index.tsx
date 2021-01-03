@@ -1,4 +1,6 @@
 import React from "react";
+import { Link } from "react-router-dom";
+
 import {
   Container,
   MenuItem,
@@ -15,6 +17,7 @@ interface Props {
   icon?: any;
   hasChild?: boolean;
   child?: boolean;
+  url: string;
 }
 
 const MenuLink = (props: Props) => (
@@ -23,7 +26,9 @@ const MenuLink = (props: Props) => (
       <Span className="iconify" active={props.active} data-inline="false">
         <Icon src={props.icon} />
       </Span>
-      <Title active={props.active}>{props.title}</Title>
+      <Title active={props.active}>
+        <Link to={props.url}>{props.title}</Link>
+      </Title>
       <Arrow
         src={require("../../../assets/icons/caret-up.svg")}
         show={props.hasChild}
@@ -37,11 +42,13 @@ export default function index() {
     <Container>
       {menuSidebar.map((key, i) => (
         <MenuLink
+          key={i}
           title={key.title}
           icon={key.icon}
           active={key.active}
           hasChild={key.hasChild}
           child={key.child}
+          url={key.link}
         />
       ))}
     </Container>
