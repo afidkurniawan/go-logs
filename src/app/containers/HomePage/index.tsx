@@ -6,6 +6,8 @@ import { useTranslation } from "react-i18next";
 
 import { translations } from "../../../locales/i18n";
 // import { Ellipsis } from "../../components/Spinners";
+import { Sidebar } from "../../components/Sidebar/Loadable";
+import { Header } from "../../components/Header/Loadable";
 
 export default function HomePage(props) {
   // const auth = useAuth();
@@ -42,6 +44,8 @@ export default function HomePage(props) {
       <Helmet>
         <title>{t(translations.home.title)}</title>
       </Helmet>
+      <Sidebar />
+      <Header title={t(translations.home.title)} />
       {content}
     </>
   );

@@ -1,6 +1,4 @@
 import React from "react";
-import { useTranslation } from "react-i18next";
-import { translations } from "../../../locales/i18n";
 
 import {
   Container,
@@ -17,12 +15,10 @@ import {
   NavText
 } from "../../../styles/Header";
 
-export default function Header() {
-  const { t } = useTranslation();
-
+export default function Header(props) {
   return (
     <Container>
-      <Title>{t(translations.requestDO.title)}</Title>
+      <Title>{props.title}</Title>
       <HeaderNav>
         <NavItem>
           <Language>

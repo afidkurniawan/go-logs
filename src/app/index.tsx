@@ -14,12 +14,10 @@ import { Switch, Route, BrowserRouter } from "react-router-dom";
 
 import { GlobalStyle } from "styles/global-styles";
 
-// import { HomePage } from "./containers/HomePage/Loadable";
+import { HomePage } from "./containers/HomePage/Loadable";
 import { RequestDO } from "./containers/DO/Loadable";
 import { Companies } from "./containers/Companies/Loadable";
 import { NotFoundPage } from "./components/NotFoundPage/Loadable";
-import { Sidebar } from "./components/Sidebar/Loadable";
-import { Header } from "./components/Header/Loadable";
 
 import config from "../config";
 import PageOf from "./containers/PageOf";
@@ -47,10 +45,9 @@ export function App() {
       </Helmet>
 
       {/* <AuthProvider {...oidcConfig}> */}
-      <Sidebar />
-      <Header />
       <Switch>
-        <Route exact path="/" component={RequestDO} />
+        <Route exact path="/" component={HomePage} />
+        <Route exact path="/do-request" component={PageOf(RequestDO)} />
         <Route
           exact
           strict
