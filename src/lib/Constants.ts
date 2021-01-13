@@ -91,3 +91,9 @@ export const bottomWizard = [
   { title: "Upload Document", active: false, next: true, prev: true },
   { title: "Review Request", active: false, next: false, prev: true }
 ];
+
+export const shippingLine = [
+  { key: "evergreen", value: "Evergreen" },
+  { Key: "cosco", value: "Cosco" },
+  { key: "maersk", value: "Maersk" }
+];
