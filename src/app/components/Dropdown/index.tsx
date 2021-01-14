@@ -4,7 +4,6 @@ import { Select } from "../../../styles/Dropdown";
 interface Props {
   name?: string;
   data?: any;
-  emptySelect?: boolean;
 }
 
 const Option = (props: Props) => {
@@ -16,10 +15,8 @@ const Option = (props: Props) => {
 };
 
 export default function Dropdown(props) {
-  let emptySelect = props.emptySelect ? "<option val=''>Select</option>" : null;
   return (
     <Select name={props.name}>
-      {emptySelect}
       <Option data={props.data} />
     </Select>
   );

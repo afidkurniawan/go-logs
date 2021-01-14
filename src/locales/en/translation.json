@@ -14,7 +14,26 @@
       "shipingline": "Shipping Line",
       "blinformation": "BL/Information",
       "mblnumber": "MBL/HBL Number",
-      "check": "Check"
+      "check": "Check",
+      "result": {
+        "foundStatus": "Job Found",
+        "notifyParty": "Notify Party",
+        "doNumber": "DO Number",
+        "doExpiredDate": "DO Expired Date",
+        "vessel": "Vessel",
+        "voyageNumber": "Voyage Number",
+        "consignee": "Consignee",
+        "portOfLoading": "Port of Loading",
+        "portOfDischarge": "Port of Discharge",
+        "portOfDelivery": "Port of Delivery",
+        "containerInformation": "Container Information",
+        "containerNo": "Container No",
+        "sealNo": "Seal No",
+        "sizeType": "Size Type",
+        "grossWeight": "Gross Weight",
+        "depoName": "Depo Name",
+        "phoneNumber": "Phone Number"
+      }
     }
   },
   "account": {

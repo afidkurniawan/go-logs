@@ -12,18 +12,24 @@ import {
   Col9,
   Col12
 } from "../../../styles/Result";
+import { useTranslation } from "react-i18next";
+import { translations } from "../../../locales/i18n";
 
 export default function Result() {
+  const { t } = useTranslation();
+
   return (
     <>
       <Message error={false}>
-        <MessageTitle>Job Found!</MessageTitle>
+        <MessageTitle>
+          {t(translations.wizard.bottom.result.foundStatus)}
+        </MessageTitle>
       </Message>
       <Row>
         <Col3>
           <Row>
             <Col12>
-              <Label>Shipping Line</Label>
+              <Label>{t(translations.wizard.bottom.shipingline)}</Label>
               <InputLong />
             </Col12>
           </Row>
@@ -31,7 +37,7 @@ export default function Result() {
         <Col9>
           <Row>
             <Col12>
-              <Label>BL Number</Label>
+              <Label>{t(translations.wizard.bottom.mblnumber)}</Label>
               <InputLong />
             </Col12>
           </Row>
@@ -41,7 +47,7 @@ export default function Result() {
         <Col3>
           <Row>
             <Col12>
-              <Label>Notify Party</Label>
+              <Label>{t(translations.wizard.bottom.result.notifyParty)}</Label>
               <InputLong />
             </Col12>
           </Row>
@@ -49,21 +55,23 @@ export default function Result() {
         <Col9>
           <Row>
             <Col6>
-              <Label>DO Number</Label>
+              <Label>{t(translations.wizard.bottom.result.doNumber)}</Label>
               <Input />
             </Col6>
             <Col6>
-              <Label>DO Expired Date</Label>
+              <Label>
+                {t(translations.wizard.bottom.result.doExpiredDate)}
+              </Label>
               <Input />
             </Col6>
           </Row>
           <Row>
             <Col6>
-              <Label>Vessel</Label>
+              <Label>{t(translations.wizard.bottom.result.vessel)}</Label>
               <Input />
             </Col6>
             <Col6>
-              <Label>Voyage Number</Label>
+              <Label>{t(translations.wizard.bottom.result.voyageNumber)}</Label>
               <Input />
             </Col6>
           </Row>
@@ -73,7 +81,7 @@ export default function Result() {
         <Col3>
           <Row>
             <Col12>
-              <Label>Consignee</Label>
+              <Label>{t(translations.wizard.bottom.result.consignee)}</Label>
               <InputLong />
             </Col12>
           </Row>
@@ -81,48 +89,54 @@ export default function Result() {
         <Col9>
           <Row>
             <Col12>
-              <Label>Port of Loading</Label>
+              <Label>
+                {t(translations.wizard.bottom.result.portOfLoading)}
+              </Label>
               <InputLong />
             </Col12>
           </Row>
           <Row>
             <Col12>
-              <Label>Port of Discharge</Label>
+              <Label>
+                {t(translations.wizard.bottom.result.portOfDischarge)}
+              </Label>
               <InputLong />
             </Col12>
           </Row>
           <Row>
             <Col12>
-              <Label>Port of Delivery</Label>
+              <Label>
+                {t(translations.wizard.bottom.result.portOfDelivery)}
+              </Label>
               <InputLong />
             </Col12>
           </Row>
         </Col9>
       </Row>
-      <Label>Container Information</Label>
+      <Label>{t(translations.wizard.bottom.result.containerInformation)}</Label>
       <Row>
         <Col2>
-          <Label>Container No</Label>
+          <Label>{t(translations.wizard.bottom.result.containerNo)}</Label>
           <InputLong />
         </Col2>
         <Col2>
-          <Label>Seal No</Label>
+          <Label>{t(translations.wizard.bottom.result.sealNo)}</Label>
           <InputLong />
         </Col2>
         <Col2>
-          <Label>Size Type</Label>
+          <Label>{t(translations.wizard.bottom.result.sizeType)}</Label>
           <InputLong />
         </Col2>
         <Col2>
-          <Label>Gross Weight</Label>
+          <Label>{t(translations.wizard.bottom.result.grossWeight)}</Label>
           <InputLong />
         </Col2>
         <Col2>
-          <Label>Depo Name</Label>
+          <Label>{t(translations.wizard.bottom.result.depoName)}</Label>
           <InputLong />
         </Col2>
         <Col2>
-          <Label>Phone Number</Label>
+          <Label>{t(translations.wizard.bottom.result.phoneNumber)}</Label>
           <InputLong />
         </Col2>
       </Row>

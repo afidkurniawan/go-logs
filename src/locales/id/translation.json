@@ -14,7 +14,26 @@
       "shipingline": "Jalur Pengiriman",
       "blinformation": "BL/Informasi",
       "mblnumber": "Nomor MBL/HBL",
-      "check": "Periksa"
+      "check": "Periksa",
+      "result": {
+        "foundStatus": "Job Ditemukan",
+        "notifyParty": "Pihak Dinotifikasi",
+        "doNumber": "Nomor DO",
+        "doExpiredDate": "Tanggal Kadaluarsa DO",
+        "vessel": "Kapal",
+        "voyageNumber": "Nomor Pelayaran  ",
+        "consignee": "Penerima Barang",
+        "portOfLoading": "Pelabuhan Muat",
+        "portOfDischarge": "Pelabuhan Pembuangan",
+        "portOfDelivery": "Pelabuhan Pengiriman",
+        "containerInformation": "Informasi Kontainer",
+        "containerNo": "Nomor Kontainer",
+        "sealNo": "Nomor Segel",
+        "sizeType": "Tipe Ukuran",
+        "grossWeight": "Berat Kotor",
+        "depoName": "Nama Depo",
+        "phoneNumber": "Nomor Telpon"
+      }
     }
   },
   "account": {
