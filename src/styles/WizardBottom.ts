@@ -1,7 +1,9 @@
 import styled from "styled-components/macro";
 
 export const Container = styled.div`
-  height: 420px;
+  display: block;
+  min-height: 420px;
+  height: auto;
   background: #ffffff;
   border-radius: 20px;
   width: 103%;

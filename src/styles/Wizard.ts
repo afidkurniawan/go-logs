@@ -76,8 +76,8 @@ export const Icon = styled.img`
 export const Input = styled.input`
   background: #eff0f7;
   border-radius: 14px;
-  width: 300px;
-  height: 50px;
+  width: 382px;
+  height: 64px;
   border: none;
   font-size: 16px;
   color: #a0a3bd;
@@ -116,8 +116,8 @@ export const Dropdown = styled.select`
 `;
 
 export const Button = styled.button`
-  width: 200px;
-  height: 54px;
+  width: 240px;
+  height: 64px;
   font-family: "Raleway";
   text-align: center;
   border: none;

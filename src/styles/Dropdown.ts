@@ -3,8 +3,8 @@ import styled from "styled-components/macro";
 export const Select = styled.select`
   background: #eff0f7;
   border-radius: 14px;
-  width: 300px;
-  height: 50px;
+  width: 382px;
+  height: 64px;
   border: none;
   font-size: 16px;
   color: #a0a3bd;

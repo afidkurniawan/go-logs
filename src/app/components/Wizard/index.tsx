@@ -9,6 +9,7 @@ export default function index() {
       <TopWizard />
       <Triangle />
       <BottomWizard />
+      <br />
     </>
   );
 }

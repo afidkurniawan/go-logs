@@ -1,5 +1,5 @@
 /**
- * Asynchronously loads the component for DatePick
+ * Asynchronously loads the component for Dropdown
  */
 
 import { lazyLoad } from "utils/loadable";
