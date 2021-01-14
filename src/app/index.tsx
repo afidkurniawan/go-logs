@@ -47,7 +47,7 @@ export function App() {
       {/* <AuthProvider {...oidcConfig}> */}
       <Switch>
         <Route exact path="/" component={HomePage} />
-        <Route exact path="/do-request" component={PageOf(RequestDO)} />
+        <Route exact path="/create-do-request" component={PageOf(RequestDO)} />
         <Route
           exact
           strict

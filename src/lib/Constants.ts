@@ -20,7 +20,7 @@ export const menuSidebar = [
     hasChild: false,
     active: true,
     child: true,
-    link: "do-request"
+    link: "create-do-request"
   },
   {
     title: "My Transaction",
