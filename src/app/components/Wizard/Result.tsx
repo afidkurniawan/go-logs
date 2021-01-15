@@ -15,7 +15,11 @@ import {
 import { useTranslation } from "react-i18next";
 import { translations } from "../../../locales/i18n";
 
-export default function Result() {
+interface IProps {
+  data?: any;
+}
+
+export default function Result(props: IProps) {
   const { t } = useTranslation();
 
   return (
@@ -30,7 +34,7 @@ export default function Result() {
           <Row>
             <Col12>
               <Label>{t(translations.wizard.bottom.shipingline)}</Label>
-              <InputLong />
+              <InputLong value={props.data.voyageNumber} />
             </Col12>
           </Row>
         </Col3>
