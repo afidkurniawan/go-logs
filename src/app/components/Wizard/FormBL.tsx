@@ -20,6 +20,8 @@ export default function FormBL() {
   const onClick = () => {
     setShowResults(true);
   };
+  const ResultWindow = showResults ? <Result /> : null;
+
   return (
     <>
       <Form>
@@ -36,7 +38,7 @@ export default function FormBL() {
             {t(translations.wizard.bottom.check)}
           </Button>
         </Group>
-        {showResults ? <Result /> : null}
+        {ResultWindow}
       </Form>
       <br />
     </>
