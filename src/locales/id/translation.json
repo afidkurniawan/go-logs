@@ -3,15 +3,16 @@
     "title": "Laman"
   },
   "requestDO": {
-    "title": "Permintaan DO",
-    "confirmation": "Konfirmasi",
-    "proformaInvoice": "Faktur/Tagihan",
-    "paymentConfirmation": "Konfirmasi Pembayaran",
-    "doRelease": "Rilis Pesanan"
+    "title": "Permintaan DO"
   },
   "wizard": {
     "top": {
-      "title": "Tahapan untuk menyelesaikan DO Request"
+      "title": "Tahapan untuk menyelesaikan DO Request",
+      "requestForm": "Form Permintaan",
+      "confirmation": "Konfirmasi",
+      "proformaInvoice": "Faktur/Tagihan",
+      "paymentConfirmation": "Konfirmasi Pembayaran",
+      "doRelease": "Rilis Pesanan"
     },
     "bottom": {
       "title": "Permintaan DO Baru",
