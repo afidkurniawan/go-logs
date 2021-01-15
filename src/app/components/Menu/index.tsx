@@ -1,5 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { translations } from "../../../locales/i18n";
+import { useTranslation } from "react-i18next";
 
 import {
   Container,
@@ -9,7 +11,6 @@ import {
   Title,
   Arrow
 } from "../../../styles/Menu";
-import { menuSidebar } from "../../../lib/Constants";
 
 interface Props {
   title?: string;
@@ -37,20 +38,59 @@ const MenuLink = (props: Props) => (
   </aside>
 );
 
-export default function index() {
+export default function Menu() {
+  const { t } = useTranslation();
+
   return (
     <Container>
-      {menuSidebar.map((key, i) => (
-        <MenuLink
-          key={i}
-          title={key.title}
-          icon={key.icon}
-          active={key.active}
-          hasChild={key.hasChild}
-          child={key.child}
-          url={key.link}
-        />
-      ))}
+      <MenuLink
+        title={t(translations.sidebarMenu.dashboard)}
+        icon={require("../../../assets/icons/dashboard.svg")}
+        active={false}
+        hasChild={false}
+        child={false}
+        url="/"
+      />
+      <MenuLink
+        title={t(translations.sidebarMenu.doOnline)}
+        icon={require("../../../assets/icons/do.svg")}
+        active={false}
+        hasChild={true}
+        child={false}
+        url="/"
+      />
+      <MenuLink
+        title={t(translations.sidebarMenu.doRequest)}
+        icon={require("../../../assets/icons/requestdo.svg")}
+        active={true}
+        hasChild={false}
+        child={true}
+        url="create-do-request"
+      />
+      <MenuLink
+        title={t(translations.sidebarMenu.myTransaction)}
+        icon={require("../../../assets/icons/mytransaction.svg")}
+        active={false}
+        hasChild={false}
+        child={true}
+        url="/"
+      />
+      <MenuLink
+        title={t(translations.sidebarMenu.system)}
+        icon={require("../../../assets/icons/system.svg")}
+        active={false}
+        hasChild={false}
+        child={false}
+        url="/"
+      />
+      <MenuLink
+        title={t(translations.sidebarMenu.logout)}
+        icon={require("../../../assets/icons/logout.svg")}
+        active={false}
+        hasChild={false}
+        child={false}
+        url="/"
+      />
     </Container>
   );
 }
