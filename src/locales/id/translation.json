@@ -3,7 +3,11 @@
     "title": "Laman"
   },
   "requestDO": {
-    "title": "Permintaan DO"
+    "title": "Permintaan DO",
+    "confirmation": "Konfirmasi",
+    "proformaInvoice": "Faktur/Tagihan",
+    "paymentConfirmation": "Konfirmasi Pembayaran",
+    "doRelease": "Rilis Pesanan"
   },
   "wizard": {
     "top": {
@@ -15,13 +19,15 @@
       "blinformation": "BL/Informasi",
       "mblnumber": "Nomor MBL/HBL",
       "check": "Periksa",
+      "uploadDocument": "Unggah Dokumen",
+      "reviewRequest": "Review Permintaan",
       "result": {
         "foundStatus": "Job Ditemukan",
         "notifyParty": "Pihak Dinotifikasi",
         "doNumber": "Nomor DO",
         "doExpiredDate": "Tanggal Kadaluarsa DO",
         "vessel": "Kapal",
-        "voyageNumber": "Nomor Pelayaran  ",
+        "voyageNumber": "Nomor Pelayaran",
         "consignee": "Penerima Barang",
         "portOfLoading": "Pelabuhan Muat",
         "portOfDischarge": "Pelabuhan Pembuangan",
@@ -47,7 +53,7 @@
   },
   "notFound": {
     "title": "Halaman Tidak Ditemukan",
-    "content": "Halaman tidak ditemukan."
+    "content": "Halaman tidak ditemukan"
   },
   "entities": {
     "general": {
@@ -57,5 +63,13 @@
       "Npwp": "Npwp",
       "Broker": "Perantara"
     }
+  },
+  "sidebarMenu": {
+    "dashboard": "Laman",
+    "doOnline": "Online DO",
+    "doRequest": "Permintaan DO",
+    "myTransaction": "Transaksi Saya",
+    "system": "Sistem",
+    "logout": "Keluar"
   }
 }

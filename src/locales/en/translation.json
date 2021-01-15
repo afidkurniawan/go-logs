@@ -7,7 +7,12 @@
   },
   "wizard": {
     "top": {
-      "title": "These are steps to complete DO Request"
+      "title": "These are steps to complete DO Request",
+      "requestForm": "Request Form",
+      "confirmation": "Confirmation",
+      "proformaInvoice": "Proforma Invoice",
+      "paymentConfirmation": "Payment Confirmation",
+      "doRelease": "DO Release"
     },
     "bottom": {
       "title": "Create New DO Request",
@@ -15,6 +20,8 @@
       "blinformation": "BL/Information",
       "mblnumber": "MBL/HBL Number",
       "check": "Check",
+      "uploadDocument": "Upload Document",
+      "reviewRequest": "Review Request",
       "result": {
         "foundStatus": "Job Found",
         "notifyParty": "Notify Party",
@@ -57,5 +64,13 @@
       "Npwp": "Npwp",
       "Broker": "Broker"
     }
+  },
+  "sidebarMenu": {
+    "dashboard": "Dashboard",
+    "doOnline": "DO Online",
+    "doRequest": "DO Request",
+    "myTransaction": "My Transaction",
+    "system": "System",
+    "logout": "Logout"
   }
 }
