@@ -9,7 +9,6 @@ import {
 } from "../../../styles/WizardBottom";
 
 import { Title, Row, Column, Item, ItemTitle } from "../../../styles/Wizard";
-import { bottomWizard } from "../../../lib/Constants";
 import FormBL from "./FormBL";
 
 export default function Bottom() {
@@ -19,18 +18,36 @@ export default function Bottom() {
     <Container>
       <Title>{t(translations.wizard.bottom.title)}</Title>
       <Row>
-        {bottomWizard.map((key, i) => (
-          <Column key={i}>
-            <Item>
-              <Rectangle show={key.prev} />
-              <CircleOuter active={key.active}>
-                <CircleInner />
-              </CircleOuter>
-              <Rectangle show={key.next} />
-            </Item>
-            <ItemTitle>{key.title}</ItemTitle>
-          </Column>
-        ))}
+        <Column>
+          <Item>
+            <Rectangle show={false} />
+            <CircleOuter active={true}>
+              <CircleInner />
+            </CircleOuter>
+            <Rectangle show={true} />
+          </Item>
+          <ItemTitle>{t(translations.wizard.bottom.blinformation)}</ItemTitle>
+        </Column>
+        <Column>
+          <Item>
+            <Rectangle show={true} />
+            <CircleOuter active={false}>
+              <CircleInner />
+            </CircleOuter>
+            <Rectangle show={true} />
+          </Item>
+          <ItemTitle>{t(translations.wizard.bottom.uploadDocument)}</ItemTitle>
+        </Column>
+        <Column>
+          <Item>
+            <Rectangle show={true} />
+            <CircleOuter active={false}>
+              <CircleInner />
+            </CircleOuter>
+            <Rectangle show={false} />
+          </Item>
+          <ItemTitle>{t(translations.wizard.bottom.reviewRequest)}</ItemTitle>
+        </Column>
       </Row>
       <FormBL />
     </Container>
