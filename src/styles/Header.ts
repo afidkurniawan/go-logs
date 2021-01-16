@@ -2,25 +2,25 @@ import styled from "styled-components/macro";
 
 export const Container = styled.div`
   position: fixed;
-  padding-top: 10px;
+  padding-top: 1.5rem;
   display: flex;
   align-items: center;
-  height: 80px;
-  width: 112%;
+  height: 15vh;
+  width: 105vw;
   margin-left: 16rem;
   padding: 0 4rem;
 `;
 
 export const Title = styled.h2`
   justify-self: start;
-  margin-left: 20px;
+  margin-left: 1rem;
   cursor: pointer;
 `;
 
 export const HeaderNav = styled.ul`
   display: grid;
   grid-template-columns: repeat(5, auto);
-  grid-gap: 10px;
+  grid-gap: 1rem;
   list-style: none;
   justify-content: end;
   margin-right: 2rem;
@@ -32,18 +32,18 @@ export const NavItem = styled.li``;
 export const Language = styled.span`
   display: flex;
   background: #ffffff;
-  border-radius: 20px;
-  width: 148px;
-  height: 52px;
+  border-radius: 1.5rem;
+  width: 110%;
+  height: 100%;
   cursor: pointer;
 `;
 
 export const Notification = styled.span`
   display: flex;
   background: #ffffff;
-  border-radius: 20px;
-  width: 52px;
-  height: 52px;
+  border-radius: 1.5rem;
+  width: 120%;
+  height: 100%;
 `;
 
 export const NotificationIcon = styled.img`
@@ -56,9 +56,9 @@ export const NotificationIcon = styled.img`
 export const Profile = styled.span`
   display: flex;
   background: #ffffff;
-  border-radius: 20px;
-  width: 169px;
-  height: 52px;
+  border-radius: 1.5rem;
+  width: 130%;
+  height: 100%;
   cursor: pointer;
 `;
 
