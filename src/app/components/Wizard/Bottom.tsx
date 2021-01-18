@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { translations } from "../../../locales/i18n";
 import {
@@ -21,6 +21,21 @@ import {
 
 export default function Bottom() {
   const { t } = useTranslation();
+  const [step, setStep] = useState(0);
+
+  const handlePrev = () => {
+    setStep(step - 1);
+  };
+  const handleNext = () => {
+    setStep(step + 1);
+  };
+  const handleSubmit = e => {
+    e.preventDefault();
+  };
+
+  const buttonPrev = step > 0 && step <= 2 ? true : false;
+  const buttonNext = step >= 0 && step < 2 ? true : false;
+  const buttonSubmit = step === 2 ? true : false;
 
   return (
     <>
@@ -62,8 +77,15 @@ export default function Bottom() {
         </Row>
       </Container>
       <Footer>
-        <ButtonO>Previous</ButtonO>
-        <Button>NextStep</Button>
+        <ButtonO show={buttonPrev} onClick={handlePrev}>
+          Previous
+        </ButtonO>
+        <Button show={buttonNext} onClick={handleNext}>
+          NextStep
+        </Button>
+        <Button show={buttonSubmit} onClick={handleSubmit}>
+          SubmitRequest
+        </Button>
       </Footer>
     </>
   );

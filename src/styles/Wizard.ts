@@ -115,7 +115,7 @@ export const Dropdown = styled.select`
   }
 `;
 
-export const Button = styled.button`
+export const Button = styled("button")<{ show?: boolean }>`
   width: 240px;
   height: 64px;
   font-family: "Raleway";
@@ -128,9 +128,10 @@ export const Button = styled.button`
   font-size: 16px;
   margin-left: 3em;
   outline: none;
+  display: ${props => (props.show ? "" : "none")};
 `;
 
-export const ButtonO = styled.button`
+export const ButtonO = styled("button")<{ show?: boolean }>`
   background: none;
   border: 1px solid #ad93f3;
   border-radius: 20px;
@@ -147,6 +148,7 @@ export const ButtonO = styled.button`
   white-space: nowrap;
   outline: none;
   font-family: "Raleway";
+  display: ${props => (props.show ? "" : "none")};
 `;
 
 export const Footer = styled.div`
