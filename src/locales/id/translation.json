@@ -22,24 +22,27 @@
       "check": "Periksa",
       "uploadDocument": "Unggah Dokumen",
       "reviewRequest": "Review Permintaan",
+      "previous": "Mundur",
+      "nextStep": "Lanjut",
+      "submitRequest": "Submit",
       "result": {
         "foundStatus": "Job Ditemukan",
-        "notifyParty": "Pihak Dinotifikasi",
+        "notifyParty": "Pihak Selain Penerima",
         "doNumber": "Nomor DO",
         "doExpiredDate": "Tanggal Kadaluarsa DO",
-        "vessel": "Kapal",
-        "voyageNumber": "Nomor Pelayaran",
-        "consignee": "Penerima Barang",
+        "vessel": "Nama Pengangkut",
+        "voyageNumber": "Nomor Pengangkut",
+        "consignee": "Penerima",
         "portOfLoading": "Pelabuhan Muat",
-        "portOfDischarge": "Pelabuhan Pembuangan",
-        "portOfDelivery": "Pelabuhan Pengiriman",
+        "portOfDischarge": "Pelabuhan Bongkar",
+        "portOfDelivery": "Lokasi Pengiriman",
         "containerInformation": "Informasi Kontainer",
         "containerNo": "Nomor Kontainer",
-        "sealNo": "Nomor Segel",
-        "sizeType": "Tipe Ukuran",
+        "sealNo": "No Segel",
+        "sizeType": "Ukuran",
         "grossWeight": "Berat Kotor",
-        "depoName": "Nama Depo",
-        "phoneNumber": "Nomor Telpon"
+        "depoName": "Nama DEPO",
+        "phoneNumber": "No Telepon"
       }
     }
   },
@@ -67,10 +70,10 @@
   },
   "sidebarMenu": {
     "dashboard": "Laman",
-    "doOnline": "Online DO",
-    "doRequest": "Permintaan DO",
+    "doOnline": "DO Online",
+    "doRequest": "Transaksi DO",
     "myTransaction": "Transaksi Saya",
-    "system": "Sistem",
+    "system": "System",
     "logout": "Keluar"
   }
 }

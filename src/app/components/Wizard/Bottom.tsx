@@ -94,13 +94,13 @@ export default function Bottom() {
       </Container>
       <Footer>
         <ButtonO show={buttonPrev} onClick={handlePrev}>
-          Previous
+          {t(translations.wizard.bottom.previous)}
         </ButtonO>
         <Button show={buttonNext} onClick={handleNext}>
-          NextStep
+          {t(translations.wizard.bottom.nextStep)}
         </Button>
         <Button show={buttonSubmit} onClick={handleSubmit}>
-          SubmitRequest
+          {t(translations.wizard.bottom.submitRequest)}
         </Button>
       </Footer>
     </>

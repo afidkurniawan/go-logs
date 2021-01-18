@@ -22,6 +22,9 @@
       "check": "Check",
       "uploadDocument": "Upload Document",
       "reviewRequest": "Review Request",
+      "previous": "Previous",
+      "nextStep": "Next Step",
+      "submitRequest": "Submit Request",
       "result": {
         "foundStatus": "Job Found",
         "notifyParty": "Notify Party",
