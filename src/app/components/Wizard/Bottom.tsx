@@ -5,7 +5,8 @@ import {
   Container,
   CircleInner,
   CircleOuter,
-  Rectangle
+  Rectangle,
+  CMark
 } from "../../../styles/WizardBottom";
 
 import {
@@ -36,6 +37,9 @@ export default function Bottom() {
   const buttonPrev = step > 0 && step <= 2 ? true : false;
   const buttonNext = step >= 0 && step < 2 ? true : false;
   const buttonSubmit = step === 2 ? true : false;
+  const C1Mark = step >= 1 ? true : false;
+  const C2Mark = step >= 2 ? true : false;
+  const C3Mark = step >= 3 ? true : false;
 
   return (
     <>
@@ -46,19 +50,27 @@ export default function Bottom() {
             <Item>
               <Rectangle show={false} />
               <CircleOuter active={true}>
-                <CircleInner />
+                <CMark
+                  src={require("../../../assets/icons/check.svg")}
+                  show={C1Mark}
+                />
+                <CircleInner show={!C1Mark} />
               </CircleOuter>
-              <Rectangle show={true} />
+              <Rectangle show={true} active={C1Mark} />
             </Item>
             <ItemTitle>{t(translations.wizard.bottom.blinformation)}</ItemTitle>
           </Column>
           <Column>
             <Item>
-              <Rectangle show={true} />
-              <CircleOuter active={false}>
-                <CircleInner />
+              <Rectangle show={true} active={C1Mark} />
+              <CircleOuter active={C1Mark}>
+                <CMark
+                  src={require("../../../assets/icons/check.svg")}
+                  show={C2Mark}
+                />
+                <CircleInner show={!C2Mark} />
               </CircleOuter>
-              <Rectangle show={true} />
+              <Rectangle show={true} active={C2Mark} />
             </Item>
             <ItemTitle>
               {t(translations.wizard.bottom.uploadDocument)}
@@ -66,9 +78,13 @@ export default function Bottom() {
           </Column>
           <Column>
             <Item>
-              <Rectangle show={true} />
-              <CircleOuter active={false}>
-                <CircleInner />
+              <Rectangle show={true} active={C2Mark} />
+              <CircleOuter active={C2Mark}>
+                <CMark
+                  src={require("../../../assets/icons/check.svg")}
+                  show={C3Mark}
+                />
+                <CircleInner show={!C3Mark} />
               </CircleOuter>
               <Rectangle show={false} />
             </Item>
