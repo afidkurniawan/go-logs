@@ -21,6 +21,67 @@ interface IProps {
 
 export default function Result(props: IProps) {
   const { t } = useTranslation();
+  const handleChange = e => {};
+  const ContainerLabel = () => (
+    <Row>
+      <Col2>
+        <Label>{t(translations.wizard.bottom.result.containerNo)}</Label>
+      </Col2>
+      <Col2>
+        <Label>{t(translations.wizard.bottom.result.sealNo)}</Label>
+      </Col2>
+      <Col2>
+        <Label>{t(translations.wizard.bottom.result.sizeType)}</Label>
+      </Col2>
+      <Col2>
+        <Label>{t(translations.wizard.bottom.result.grossWeight)}</Label>
+      </Col2>
+      <Col2>
+        <Label>{t(translations.wizard.bottom.result.depoName)}</Label>
+      </Col2>
+      <Col2>
+        <Label>{t(translations.wizard.bottom.result.phoneNumber)}</Label>
+      </Col2>
+    </Row>
+  );
+
+  const ContainerValue = (props: IProps) => (
+    <Row>
+      <Col2>
+        <InputLong
+          name="containerNo"
+          value={props.data.containerNumber}
+          onChange={handleChange}
+        />
+      </Col2>
+      <Col2>
+        <InputLong
+          name="sealNo"
+          value={props.data.sealNumber}
+          onChange={handleChange}
+        />
+      </Col2>
+      <Col2>
+        <InputLong
+          name="sizeType"
+          value={props.data.size}
+          onChange={handleChange}
+        />
+      </Col2>
+      <Col2>
+        <InputLong name="grossWeight" />
+      </Col2>
+      <Col2>
+        <InputLong name="depoName" />
+      </Col2>
+      <Col2>
+        <InputLong name="phoneNumber" />
+      </Col2>
+    </Row>
+  );
+
+  const Containers = (props: IProps) =>
+    props.data.map((key, i) => <ContainerValue key={i} data={key} />);
 
   return (
     <>
@@ -34,7 +95,7 @@ export default function Result(props: IProps) {
           <Row>
             <Col12>
               <Label>{t(translations.wizard.bottom.shipingline)}</Label>
-              <InputLong value={props.data.voyageNumber} />
+              <InputLong value={""} onChange={handleChange} />
             </Col12>
           </Row>
         </Col3>
@@ -42,7 +103,10 @@ export default function Result(props: IProps) {
           <Row>
             <Col12>
               <Label>{t(translations.wizard.bottom.mblnumber)}</Label>
-              <InputLong />
+              <InputLong
+                value={props.data.cargo.blNumber}
+                onChange={handleChange}
+              />
             </Col12>
           </Row>
         </Col9>
@@ -60,7 +124,7 @@ export default function Result(props: IProps) {
           <Row>
             <Col6>
               <Label>{t(translations.wizard.bottom.result.doNumber)}</Label>
-              <Input />
+              <Input value={""} onChange={handleChange} />
             </Col6>
             <Col6>
               <Label>
@@ -72,11 +136,17 @@ export default function Result(props: IProps) {
           <Row>
             <Col6>
               <Label>{t(translations.wizard.bottom.result.vessel)}</Label>
-              <Input />
+              <Input
+                value={props.data.cargo.shipName}
+                onChange={handleChange}
+              />
             </Col6>
             <Col6>
               <Label>{t(translations.wizard.bottom.result.voyageNumber)}</Label>
-              <Input />
+              <Input
+                value={props.data.cargo.voyageNumber}
+                onChange={handleChange}
+              />
             </Col6>
           </Row>
         </Col9>
@@ -86,7 +156,10 @@ export default function Result(props: IProps) {
           <Row>
             <Col12>
               <Label>{t(translations.wizard.bottom.result.consignee)}</Label>
-              <InputLong />
+              <InputLong
+                value={props.data.cargo.consigneeName}
+                onChange={handleChange}
+              />
             </Col12>
           </Row>
         </Col3>
@@ -118,32 +191,8 @@ export default function Result(props: IProps) {
         </Col9>
       </Row>
       <Label>{t(translations.wizard.bottom.result.containerInformation)}</Label>
-      <Row>
-        <Col2>
-          <Label>{t(translations.wizard.bottom.result.containerNo)}</Label>
-          <InputLong />
-        </Col2>
-        <Col2>
-          <Label>{t(translations.wizard.bottom.result.sealNo)}</Label>
-          <InputLong />
-        </Col2>
-        <Col2>
-          <Label>{t(translations.wizard.bottom.result.sizeType)}</Label>
-          <InputLong />
-        </Col2>
-        <Col2>
-          <Label>{t(translations.wizard.bottom.result.grossWeight)}</Label>
-          <InputLong />
-        </Col2>
-        <Col2>
-          <Label>{t(translations.wizard.bottom.result.depoName)}</Label>
-          <InputLong />
-        </Col2>
-        <Col2>
-          <Label>{t(translations.wizard.bottom.result.phoneNumber)}</Label>
-          <InputLong />
-        </Col2>
-      </Row>
+      <ContainerLabel />
+      <Containers data={props.data.cargo.containers} />
     </>
   );
 }

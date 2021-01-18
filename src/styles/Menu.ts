@@ -16,8 +16,8 @@ export const MenuItem = styled("div")<{ active?: boolean; child?: boolean }>`
   background: ${props => (props.active ? "#F1F1FF" : "transparent")};
   padding-left: ${props => (props.child ? "3.5em" : "2em")};
   display: flex;
-  width: ${props => (props.child ? "90vw" : "170%")};
-  margin-left: 0.3rem;
+  width: ${props => (props.child ? "16.5vw" : "16.5vw")};
+  margin-left: 0.2rem;
   cursor: pointer;
   display: flex;
   flex-direction: row;
@@ -50,5 +50,5 @@ export const Arrow = styled("img")<{ show?: boolean }>`
   align-items: right;
   width: auto;
   height: 20%;
-  padding-left: 25%;
+  padding-left: 7vw;
 `;

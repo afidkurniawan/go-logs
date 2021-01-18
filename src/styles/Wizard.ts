@@ -129,3 +129,28 @@ export const Button = styled.button`
   margin-left: 3em;
   outline: none;
 `;
+
+export const ButtonO = styled.button`
+  background: none;
+  border: 1px solid #ad93f3;
+  border-radius: 20px;
+  box-sizing: border-box;
+  color: #ad93f3;
+  cursor: pointer;
+  font-size: 16px;
+  width: 240px;
+  height: 64px;
+  line-height: 27px;
+  position: relative;
+  text-decoration: none;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  outline: none;
+  font-family: "Raleway";
+`;
+
+export const Footer = styled.div`
+  margin-top: 2rem;
+  float: right;
+  padding-bottom: 2rem;
+`;
