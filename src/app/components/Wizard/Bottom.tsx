@@ -21,6 +21,8 @@ import {
   Footer
 } from "../../../styles/Wizard";
 
+import FormBL from "./FormBL";
+
 export default function Bottom() {
   const { t } = useTranslation();
   const [step, setStep] = useState(0);
@@ -83,6 +85,7 @@ export default function Bottom() {
             <ItemTitle>{t(translations.wizard.bottom.reviewRequest)}</ItemTitle>
           </Column>
         </Row>
+        <FormBL />
       </Container>
       <Footer>
         <ButtonO show={buttonPrev} onClick={handlePrev}>

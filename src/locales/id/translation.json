@@ -7,21 +7,21 @@
   },
   "wizard": {
     "top": {
-      "title": "Tahapan untuk menyelesaikan DO Request",
-      "requestForm": "Form Permintaan",
+      "title": "Transaksi DO",
+      "requestForm": "Formulir Transaksi DO",
       "confirmation": "Konfirmasi",
       "proformaInvoice": "Faktur/Tagihan",
       "paymentConfirmation": "Konfirmasi Pembayaran",
-      "doRelease": "Rilis Pesanan"
+      "doRelease": "Rilis DO"
     },
     "bottom": {
-      "title": "Permintaan DO Baru",
-      "shipingline": "Jalur Pengiriman",
+      "title": "Permintaan Rilis DO",
+      "shipingline": "Nama Kapal",
       "blinformation": "BL/Informasi",
-      "mblnumber": "Nomor MBL/HBL",
-      "check": "Periksa",
+      "mblnumber": "Nomor BL",
+      "check": "Cek",
       "uploadDocument": "Unggah Dokumen",
-      "reviewRequest": "Review Permintaan",
+      "reviewRequest": "Cek dan Konfirmasi Permintaan Rilis DO",
       "previous": "Mundur",
       "nextStep": "Lanjut",
       "submitRequest": "Submit",
@@ -37,7 +37,7 @@
         "portOfDischarge": "Pelabuhan Bongkar",
         "portOfDelivery": "Lokasi Pengiriman",
         "containerInformation": "Informasi Kontainer",
-        "containerNo": "Nomor Kontainer",
+        "containerNo": "No Kontainer",
         "sealNo": "No Segel",
         "sizeType": "Ukuran",
         "grossWeight": "Berat Kotor",

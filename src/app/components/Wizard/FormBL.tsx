@@ -45,7 +45,7 @@ export default function FormBL() {
             <Icon src={require("../../../assets/icons/calendar.svg")} />
             <DatePick />
           </div>
-          <Button type={"button"} onClick={handleClick}>
+          <Button type={"button"} onClick={handleClick} show={true}>
             {t(translations.wizard.bottom.check)}
           </Button>
         </Group>
