@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import "../../../styles/Datepicker.css";
+import moment from "moment";
 
 export default class DatePick extends Component {
   state = {
@@ -35,6 +36,7 @@ export default class DatePick extends Component {
         placeholderText="Select Date"
         selected={this.state.date ? this.state.date : null}
         onChange={this.handleChangeDate}
+        maxDate={moment().toDate()}
       />
     );
   }
