@@ -12,7 +12,11 @@ export const Container = styled.div`
   top: 100px;
 `;
 
-export const MenuItem = styled("div")<{ active?: boolean; child?: boolean }>`
+export const MenuItem = styled("div")<{
+  active?: boolean;
+  child?: boolean;
+  show?: boolean;
+}>`
   background: ${props => (props.active ? "#F1F1FF" : "transparent")};
   padding-left: ${props => (props.child ? "3.5em" : "2em")};
   display: flex;

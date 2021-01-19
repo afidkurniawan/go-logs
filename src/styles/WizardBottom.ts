@@ -6,7 +6,7 @@ export const Container = styled.div`
   height: auto;
   background: #ffffff;
   border-radius: 20px;
-  width: 103%;
+  width: 98%;
 `;
 
 export const CircleOuter = styled("div")<{ active?: boolean; show?: boolean }>`

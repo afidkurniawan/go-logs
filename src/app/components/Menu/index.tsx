@@ -19,6 +19,8 @@ interface Props {
   hasChild?: boolean;
   child?: boolean;
   url: string;
+  onClick?: any;
+  show?: boolean;
 }
 
 const MenuLink = (props: Props) => (

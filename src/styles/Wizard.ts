@@ -155,4 +155,5 @@ export const Footer = styled.div`
   margin-top: 2rem;
   float: right;
   padding-bottom: 2rem;
+  margin-right: 1.5rem;
 `;

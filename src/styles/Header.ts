@@ -9,6 +9,8 @@ export const Container = styled.div`
   width: 105vw;
   margin-left: 16rem;
   padding: 0 4rem;
+  overflow: hidden;
+  background-color: "#ffffff";
 `;
 
 export const Title = styled.h2`
@@ -84,5 +86,28 @@ export const ProfileIcon = styled.img`
   align-items: center;
   margin-left: 0.5rem;
   margin-top: 0.5rem;
+  cursor: pointer;
+`;
+
+export const Row = styled.div`
+  text-align: center;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+`;
+
+export const LangOptions = styled.div`
+  margin-top: 0.2rem;
+  position: fixed;
+  border-radius: 0.5rem;
+  background: #ffffff;
+  width: 135px;
+  height: 100px;
+  outline-style: solid;
+  outline-color: rgba(189, 189, 189, 0.33);
+`;
+
+export const LangItem = styled.span`
+  display: block;
   cursor: pointer;
 `;

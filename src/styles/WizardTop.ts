@@ -4,7 +4,7 @@ export const Container = styled.div`
   height: 265px;
   background: #ffffff;
   border-radius: 20px;
-  width: 103%;
+  width: 98%;
 `;
 
 export const Icon = styled.img`
