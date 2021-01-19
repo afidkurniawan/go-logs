@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { translations } from "../../../locales/i18n";
+import iCheck from "../../../assets/icons/check.svg";
 import {
   Container,
   CircleInner,
@@ -50,10 +51,7 @@ export default function Bottom() {
             <Item>
               <Rectangle show={false} />
               <CircleOuter active={true}>
-                <CMark
-                  src={require("../../../assets/icons/check.svg")}
-                  show={C1Mark}
-                />
+                <CMark src={iCheck} show={C1Mark} />
                 <CircleInner show={!C1Mark} />
               </CircleOuter>
               <Rectangle show={true} active={C1Mark} />
@@ -64,10 +62,7 @@ export default function Bottom() {
             <Item>
               <Rectangle show={true} active={C1Mark} />
               <CircleOuter active={C1Mark}>
-                <CMark
-                  src={require("../../../assets/icons/check.svg")}
-                  show={C2Mark}
-                />
+                <CMark src={iCheck} show={C2Mark} />
                 <CircleInner show={!C2Mark} />
               </CircleOuter>
               <Rectangle show={true} active={C2Mark} />
@@ -80,10 +75,7 @@ export default function Bottom() {
             <Item>
               <Rectangle show={true} active={C2Mark} />
               <CircleOuter active={C2Mark}>
-                <CMark
-                  src={require("../../../assets/icons/check.svg")}
-                  show={C3Mark}
-                />
+                <CMark src={iCheck} show={C3Mark} />
                 <CircleInner show={!C3Mark} />
               </CircleOuter>
               <Rectangle show={false} />
