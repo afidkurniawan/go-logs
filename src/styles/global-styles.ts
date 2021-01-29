@@ -6,15 +6,10 @@ export const GlobalStyle = createGlobalStyle`
     font-family: 'Raleway','Helvetica Neue', Helvetica, Arial, sans-serif;
     background: #F4F4FF;
     color: #111111;
-    margin: 0;
-    padding: 0;
-  }
-
-  #root {
     min-height: 100%;
     min-width: 100%;
   }
-  
+
   .main-content{
     top: 10%;
     width: auto;

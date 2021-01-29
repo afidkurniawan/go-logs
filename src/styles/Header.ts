@@ -2,114 +2,102 @@ import styled from "styled-components/macro";
 
 export const Container = styled.div`
   position: fixed;
-  display: flex;
-  align-items: center;
-  height: 10vh;
-  width: 79vw;
+  padding-top: 2rem;
+  height: 7rem;
+  width: 81rem;
   margin-left: 20rem;
-  overflow: hidden;
   background: #f4f4ff;
-  /* background: white; */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 `;
 
-export const Title = styled.h1`
-  justify-self: start;
-  margin-left: 1rem;
-  width: 50%;
+export const Title = styled.div`
+  width: 65%;
   font-style: normal;
   font-weight: bold;
   font-size: 2rem;
-  line-height: 10rem;
-  cursor: pointer;
+  line-height: 2.125rem;
 `;
 
-export const HeaderNav = styled.ul`
-  display: grid;
-  grid-template-columns: repeat(5, auto);
-  grid-gap: 1rem;
-  list-style: none;
-  justify-content: end;
-  margin-right: 2rem;
-  width: 68%;
-`;
-
-export const NavItem = styled.li``;
-
-export const Language = styled.span`
+export const HeaderNav = styled.div`
+  width: 32%;
   display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: 0rem;
+  margin-right: 0.5rem;
+`;
+
+export const Language = styled("div")<{ show?: boolean }>`
   background: #ffffff;
-  border-radius: 1.5rem;
-  width: 110%;
-  height: 100%;
+  border-radius: 1.2rem;
+  width: 10.6rem;
+  height: 3.25rem;
   cursor: pointer;
-`;
-
-export const Notification = styled.span`
-  display: flex;
-  background: #ffffff;
-  border-radius: 1.5rem;
-  width: 130%;
-  height: 100%;
-`;
-
-export const NotificationIcon = styled.img`
+  align-content: center;
+  justify-content: center;
   align-items: center;
-  margin-left: 0.5rem;
-  margin-top: 0.5rem;
-  width: 2rem;
-  height: 2rem;
-  cursor: pointer;
-`;
-
-export const Profile = styled.span`
   display: flex;
-  background: #ffffff;
-  border-radius: 1.5rem;
-  width: 130%;
-  height: 100%;
-  cursor: pointer;
-`;
-
-export const NavText = styled.p`
-  display: inline-flex;
-  margin-left: 0.5rem;
-  vertical-align: middle;
-  cursor: pointer;
-`;
-
-export const LanguageIcon = styled.img`
-  align-items: center;
-  margin-left: 1rem;
-  margin-top: 0.1rem;
-  cursor: pointer;
+  border: ${props => (props.show ? "0.125rem solid #5f2eea" : "")};
 `;
 
 export const LanguageNav = styled.img`
-  margin-left: 0.9rem;
+  margin-left: 1rem;
 `;
 
-export const ProfileIcon = styled.img`
-  align-items: center;
-  margin-left: 0.5rem;
-  margin-top: 0.5rem;
+export const Notification = styled.div`
+  background: #ffffff;
+  border-radius: 2rem;
+  width: 3.25rem;
+  height: 3.25rem;
   cursor: pointer;
-`;
-
-export const Row = styled.div`
-  text-align: center;
+  display: flex;
   align-content: center;
   justify-content: center;
   align-items: center;
 `;
 
-export const LangOptions = styled.div`
-  margin-top: 0.2rem;
-  position: fixed;
-  border-radius: 0.5rem;
+export const NotificationIcon = styled.img`
   background: #ffffff;
-  width: 135px;
-  height: 100px;
-  outline-style: solid;
+  padding: 0.3rem;
+  border-radius: 50%;
+  font-weight: bolder;
+`;
+
+export const Profile = styled.div`
+  background: #ffffff;
+  border-radius: 2rem;
+  width: 10.6rem;
+  height: 3.25rem;
+  cursor: pointer;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+`;
+
+export const ProfileIcon = styled.img`
+  background: #ffffff;
+  padding: 0.3rem;
+  border-radius: 50%;
+  font-weight: bolder;
+`;
+
+export const NavText = styled.p`
+  font-size: 1rem;
+`;
+
+export const LangOptions = styled.div`
+  margin-top: 3.8rem;
+  margin-left: 0.3rem;
+  padding-left: 0.5rem;
+  position: fixed;
+  border-radius: 0.94rem;
+  background: #ffffff;
+  width: 10.5rem;
+  height: 6.25rem;
+  border: 0.125rem solid rgba(189, 189, 189, 0.33);
   outline-color: rgba(189, 189, 189, 0.33);
 `;
 

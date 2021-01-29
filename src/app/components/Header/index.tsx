@@ -4,7 +4,6 @@ import {
   Container,
   Title,
   HeaderNav,
-  NavItem,
   Profile,
   Notification,
   NotificationIcon,
@@ -12,7 +11,6 @@ import {
   LanguageNav,
   ProfileIcon,
   NavText,
-  Row,
   LangOptions,
   LangItem
 } from "../../../styles/Header";
@@ -54,30 +52,20 @@ export default function Header(props) {
     <Container>
       <Title>{props.title}</Title>
       <HeaderNav>
-        <NavItem>
-          <Row>
-            <Language onClick={languageChange}>
-              <NavText>{textLang}</NavText>
-              <LanguageNav
-                src={require("../../../assets/icons/caret-down.svg")}
-              />
-            </Language>
-            <LanguageOptions />
-          </Row>
-        </NavItem>
-        <NavItem>
-          <Notification>
-            <NotificationIcon
-              src={require("../../../assets/icons/notification.svg")}
-            />
-          </Notification>
-        </NavItem>
-        <NavItem>
-          <Profile>
-            <ProfileIcon src={require("../../../assets/images/avatar.svg")} />
-            <NavText>John Doe</NavText>
-          </Profile>
-        </NavItem>
+        <Language show={collapseLang} onClick={languageChange}>
+          <NavText>{textLang}</NavText>
+          <LanguageNav src={require("../../../assets/icons/caret-down.svg")} />
+        </Language>
+        <LanguageOptions />
+        <Notification>
+          <NotificationIcon
+            src={require("../../../assets/icons/notification.svg")}
+          />
+        </Notification>
+        <Profile>
+          <ProfileIcon src={require("../../../assets/images/avatar.svg")} />
+          <NavText>John Doe</NavText>
+        </Profile>
       </HeaderNav>
     </Container>
   );
