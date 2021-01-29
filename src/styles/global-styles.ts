@@ -21,7 +21,7 @@ export const GlobalStyle = createGlobalStyle`
   }
   
   .main-content{
-    top: 100px;
+    top: 10%;
     width: auto;
     margin-left: 17rem;
     position: relative;

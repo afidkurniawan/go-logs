@@ -1,6 +1,4 @@
 import React, { useState } from "react";
-import imgEn from "../../../assets/icons/lang-english.svg";
-import imgId from "../../../assets/icons/lang-indonesia.svg";
 
 import {
   Container,
@@ -11,7 +9,6 @@ import {
   Notification,
   NotificationIcon,
   Language,
-  LanguageIcon,
   LanguageNav,
   ProfileIcon,
   NavText,
@@ -23,8 +20,7 @@ import {
 export default function Header(props) {
   const idID = localStorage.getItem("i18nextLng") === "id-ID" ? true : false;
   const [collapseLang, setCollapselang] = useState(false);
-  const iconLang = idID ? imgId : imgEn;
-  const textLang = idID ? "IDN" : "ENG";
+  const textLang = idID ? "Indonesia" : "English(US)";
 
   const languageChange = () => {
     setCollapselang(!collapseLang);
@@ -46,12 +42,10 @@ export default function Header(props) {
     collapseLang ? (
       <LangOptions>
         <LangItem onClick={langEn}>
-          <LanguageIcon src={imgEn} />
-          <NavText>ENG</NavText>
+          <NavText>English(US)</NavText>
         </LangItem>
         <LangItem onClick={langId}>
-          <LanguageIcon src={imgId} />
-          <NavText>IDN</NavText>
+          <NavText>Indonesia</NavText>
         </LangItem>
       </LangOptions>
     ) : null;
@@ -63,7 +57,6 @@ export default function Header(props) {
         <NavItem>
           <Row>
             <Language onClick={languageChange}>
-              <LanguageIcon src={iconLang} />
               <NavText>{textLang}</NavText>
               <LanguageNav
                 src={require("../../../assets/icons/caret-down.svg")}

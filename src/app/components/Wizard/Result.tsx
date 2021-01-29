@@ -85,9 +85,9 @@ export default function Result(props: IProps) {
 
   return (
     <>
-      <Message error={false}>
+      <Message error={true}>
         <MessageTitle>
-          {t(translations.wizard.bottom.result.foundStatus)}
+          {t(translations.wizard.bottom.result.notFoundStatus)}
         </MessageTitle>
       </Message>
       <Row>

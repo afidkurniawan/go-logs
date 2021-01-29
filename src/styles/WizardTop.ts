@@ -25,8 +25,8 @@ export const Circle = styled("div")<{ active?: boolean; show?: boolean }>`
   text-align: center;
   align-content: center;
   display: flex;
-  width: 30px;
-  height: 30px;
+  width: 40px;
+  height: 40px;
 `;
 
 export const Number = styled("div")<{ active?: boolean }>`

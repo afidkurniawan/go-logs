@@ -2,20 +2,24 @@ import styled from "styled-components/macro";
 
 export const Container = styled.div`
   position: fixed;
-  padding-top: 1.5rem;
   display: flex;
   align-items: center;
-  height: 15vh;
-  width: 105vw;
-  margin-left: 16rem;
-  padding: 0 4rem;
+  height: 10vh;
+  width: 79vw;
+  margin-left: 20rem;
   overflow: hidden;
-  background-color: "#ffffff";
+  background: #f4f4ff;
+  /* background: white; */
 `;
 
-export const Title = styled.h2`
+export const Title = styled.h1`
   justify-self: start;
   margin-left: 1rem;
+  width: 50%;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 2rem;
+  line-height: 10rem;
   cursor: pointer;
 `;
 
@@ -44,7 +48,7 @@ export const Notification = styled.span`
   display: flex;
   background: #ffffff;
   border-radius: 1.5rem;
-  width: 120%;
+  width: 130%;
   height: 100%;
 `;
 
@@ -52,6 +56,8 @@ export const NotificationIcon = styled.img`
   align-items: center;
   margin-left: 0.5rem;
   margin-top: 0.5rem;
+  width: 2rem;
+  height: 2rem;
   cursor: pointer;
 `;
 

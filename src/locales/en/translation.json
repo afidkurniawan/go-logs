@@ -27,6 +27,7 @@
       "submitRequest": "Submit Request",
       "result": {
         "foundStatus": "Job Found",
+        "notFoundStatus": "Job Not Found",
         "notifyParty": "Notify Party",
         "doNumber": "DO Number",
         "doExpiredDate": "DO Expired Date",

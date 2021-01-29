@@ -26,7 +26,8 @@
       "nextStep": "Lanjut",
       "submitRequest": "Submit",
       "result": {
-        "foundStatus": "Job Ditemukan",
+        "foundStatus": "Data Ditemukan",
+        "notFoundStatus": "Data Tidak Ditemukan",
         "notifyParty": "Pihak Selain Penerima",
         "doNumber": "Nomor DO",
         "doExpiredDate": "Tanggal Kadaluarsa DO",
@@ -73,7 +74,7 @@
     "doOnline": "DO Online",
     "doRequest": "Transaksi DO",
     "myTransaction": "Transaksi Saya",
-    "system": "System",
+    "system": "Sistem",
     "logout": "Keluar"
   }
 }
