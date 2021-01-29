@@ -4,12 +4,12 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 0px;
+  padding: 0rem;
   position: absolute;
-  width: 100%;
-  height: 20vh;
-  left: 0px;
-  top: 100px;
+  width: 18.5rem;
+  height: 3.75rem;
+  left: 0rem;
+  top: 6.25rem;
 `;
 
 export const MenuItem = styled("div")<{
@@ -18,34 +18,34 @@ export const MenuItem = styled("div")<{
   show?: boolean;
 }>`
   background: ${props => (props.active ? "#F1F1FF" : "transparent")};
-  padding-left: ${props => (props.child ? "3.5em" : "2em")};
+  padding-left: ${props => (props.child ? "4rem" : "2rem")};
   display: flex;
-  width: ${props => (props.child ? "16.5vw" : "16.5vw")};
-  margin-left: 0.2rem;
+  width: ${props => (props.child ? "17rem" : "18rem")};
+  height: 3.75rem;
+  margin-left: 0.5rem;
   cursor: pointer;
   display: flex;
   flex-direction: row;
   align-items: center;
   margin-bottom: 0.7rem;
+  border-radius: 1.25rem;
 `;
 
 export const Span = styled("span")<{ active?: boolean }>`
-  color: ${props => (props.active ? "#7456FD" : "#111111")};
   display: flex;
   font-size: 1rem;
   margin-right: 1rem;
 `;
 
 export const Icon = styled.img`
-  height: 1rem;
+  height: 1.5rem;
   padding-right: 0.5rem;
 `;
 
 export const Title = styled("h1")<{ active?: boolean }>`
-  font-weight: ${props => (props.active ? "20rem" : "normal")};
-  color: ${props => (props.active ? "#7456FD" : "#111111")};
-  font-style: normal;
-  font-size: 0.9rem;
+  font-weight: ${props => (props.active ? "bold" : "normal")};
+  color: ${props => (props.active ? "#7456FD" : "#222151")};
+  font-size: 1rem;
 `;
 
 export const Arrow = styled("img")<{ show?: boolean }>`
@@ -53,6 +53,5 @@ export const Arrow = styled("img")<{ show?: boolean }>`
   justify-content: flex-end;
   align-items: right;
   width: auto;
-  height: 20%;
-  padding-left: 7vw;
+  padding-left: 7.5rem;
 `;

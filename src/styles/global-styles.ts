@@ -3,16 +3,11 @@ import { createGlobalStyle } from "styled-components";
 export const GlobalStyle = createGlobalStyle`
   html,
   body {
-    height: 100%;
-    width: 100%;
+    font-family: 'Raleway','Helvetica Neue', Helvetica, Arial, sans-serif;
     background: #F4F4FF;
     color: #111111;
     margin: 0;
     padding: 0;
-  }
-
-  body {
-    font-family: 'Raleway','Helvetica Neue', Helvetica, Arial, sans-serif;
   }
 
   #root {

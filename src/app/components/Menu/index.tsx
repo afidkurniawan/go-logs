@@ -29,9 +29,9 @@ const MenuLink = (props: Props) => (
       <Span className="iconify" active={props.active} data-inline="false">
         <Icon src={props.icon} />
       </Span>
-      <Title active={props.active}>
-        <Link to={props.url}>{props.title}</Link>
-      </Title>
+      <Link to={props.url}>
+        <Title active={props.active}>{props.title}</Title>
+      </Link>
       <Arrow
         src={require("../../../assets/icons/caret-up.svg")}
         show={props.hasChild}
