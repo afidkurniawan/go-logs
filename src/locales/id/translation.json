@@ -17,6 +17,7 @@
     "bottom": {
       "title": "Permintaan Rilis DO",
       "shipingline": "Nama Kapal",
+      "shippingLineSelected": "Pilih Nama Kapal",
       "blinformation": "BL/Informasi",
       "mblnumber": "Nomor BL",
       "check": "Cek",

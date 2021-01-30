@@ -2,17 +2,16 @@
 .react-datepicker__input-container,
 .react-datepicker__input-container input {
   display: block;
-  width: 100%;
+  width: 23.875rem;
   background: #eff0f7;
-  border-radius: 16px;
-  width: 382px;
-  height: 64px;
+  border-radius: 0.75rem;
+  height: 4rem;
   border: none;
-  font-size: 18px;
+  font-size: 1rem;
   color: #a0a3bd;
   font-family: "Raleway";
   text-align: center;
-  margin-right: 1em;
-  margin-left: 1em;
+  margin-right: 1rem;
+  margin-left: 1rem;
   outline: none;
 }

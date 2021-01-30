@@ -6,13 +6,14 @@ import {
   Input,
   Icon,
   Label,
-  Button
+  Button,
+  Dropdown,
+  DropdownText,
+  DropdownExpand
 } from "../../../styles/Wizard";
 import { DatePick } from "../Datepicker/Loadable";
 import { useTranslation } from "react-i18next";
 import { translations } from "../../../locales/i18n";
-import { Dropdown } from "../Dropdown/Loadable";
-import { shippingLine } from "../../../lib/Constants";
 import Result from "./Result";
 import { loader } from "graphql.macro";
 import { useLazyQuery } from "@apollo/client";
@@ -37,7 +38,12 @@ export default function FormBL() {
     <>
       <Form>
         <Label>{t(translations.wizard.bottom.shipingline)}</Label>
-        <Dropdown name="shippingLine" data={shippingLine} emptySelect={true} />
+        <Dropdown>
+          <DropdownText>
+            {t(translations.wizard.bottom.shippingLineSelected)}
+          </DropdownText>
+          <DropdownExpand src={require("../../../assets/icons/forward.svg")} />
+        </Dropdown>
         <Label>{t(translations.wizard.bottom.blinformation)}</Label>
         <Group>
           <Input placeholder={t(translations.wizard.bottom.mblnumber)} />
@@ -51,7 +57,6 @@ export default function FormBL() {
         </Group>
         {ResultWindow}
       </Form>
-      <br />
     </>
   );
 }
