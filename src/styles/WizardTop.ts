@@ -1,10 +1,10 @@
 import styled from "styled-components/macro";
 
 export const Container = styled.div`
-  height: 265px;
+  height: 16.2rem;
+  width: 80rem;
   background: #ffffff;
-  border-radius: 20px;
-  width: 98%;
+  border-radius: 1.25rem;
 `;
 
 export const Icon = styled.img`
@@ -12,8 +12,8 @@ export const Icon = styled.img`
   justify-content: center;
   margin-top: 2rem;
   cursor: pointer;
-  width: 33%;
-  height: 33%;
+  width: 5rem;
+  height: 5rem;
 `;
 
 export const Circle = styled("div")<{ active?: boolean; show?: boolean }>`
@@ -25,17 +25,17 @@ export const Circle = styled("div")<{ active?: boolean; show?: boolean }>`
   text-align: center;
   align-content: center;
   display: flex;
-  width: 40px;
-  height: 40px;
+  width: 2.5rem;
+  height: 2.5rem;
 `;
 
 export const Number = styled("div")<{ active?: boolean }>`
   color: ${props => (props.active ? "#FFFFFF" : "#3F3F3F")};
-  font-size: 13px;
+  font-size: 0.81rem;
 `;
 
 export const Rectangle = styled("div")<{ show?: boolean }>`
   background-color: ${props => (props.show ? "#EFF0F6" : "#FFFFFF")};
-  height: 6px;
-  width: 45%;
+  height: 0.375rem;
+  width: 6.8rem;
 `;
