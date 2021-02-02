@@ -44,6 +44,20 @@ export default function Bottom() {
   const C2Mark = step >= 2 ? true : false;
   const C3Mark = step >= 3 ? true : false;
 
+  const WizardControl = () => (
+    <Footer>
+      <ButtonO show={buttonPrev} onClick={handlePrev}>
+        {t(translations.wizard.bottom.previous)}
+      </ButtonO>
+      <Button show={buttonNext} onClick={handleNext}>
+        {t(translations.wizard.bottom.nextStep)}
+      </Button>
+      <Button show={buttonSubmit} onClick={handleSubmit}>
+        {t(translations.wizard.bottom.submitRequest)}
+      </Button>
+    </Footer>
+  );
+
   return (
     <>
       <Container>
@@ -87,17 +101,7 @@ export default function Bottom() {
         </Row>
         <FormBL />
       </Container>
-      <Footer>
-        <ButtonO show={buttonPrev} onClick={handlePrev}>
-          {t(translations.wizard.bottom.previous)}
-        </ButtonO>
-        <Button show={buttonNext} onClick={handleNext}>
-          {t(translations.wizard.bottom.nextStep)}
-        </Button>
-        <Button show={buttonSubmit} onClick={handleSubmit}>
-          {t(translations.wizard.bottom.submitRequest)}
-        </Button>
-      </Footer>
+      <WizardControl />
     </>
   );
 }

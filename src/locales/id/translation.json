@@ -19,6 +19,7 @@
       "shipingline": "Nama Kapal",
       "shippingLineSelected": "Pilih Nama Kapal",
       "blinformation": "BL/Informasi",
+      "selectDate": "Pilih Tanggal",
       "mblnumber": "Nomor BL",
       "check": "Cek",
       "uploadDocument": "Unggah Dokumen",
@@ -52,7 +53,8 @@
     "logout": "Keluar"
   },
   "error": {
-    "content": "Ada yang salah."
+    "content": "Ada yang salah.",
+    "requiredField": "wajib diisi"
   },
   "companies": {
     "title": "Perusahaan"

@@ -62,30 +62,37 @@ export const Label = styled.p`
 
 export const Group = styled.div`
   display: flex;
+  justify-content: space-between;
+  margin: 0 0 1rem 0;
 `;
 
 export const Icon = styled.img`
   position: absolute;
   float: right;
-  margin-left: 3%;
-  margin-top: 0.7%;
   height: 2rem;
+  margin-left: 1rem;
+  margin-top: 1rem;
   z-index: 10;
 `;
 
-export const Input = styled.input`
-  background: #eff0f7;
+export const Input = styled("input")<{ error?: boolean }>`
+  background: ${props => (props.error ? "#fff3f8" : "#eff0f7")};
   border-radius: 0.75rem;
   width: 23.875rem;
   height: 4rem;
-  border: none;
+  border: ${props => (props.error ? "2px solid #ed2e7e" : "none")};
   font-size: 1rem;
   color: #a0a3bd;
   align-items: center;
-  margin-right: 1em;
   outline: none;
   padding-left: 1.5rem;
   font-family: "Raleway";
+`;
+
+export const MessageInput = styled("p")<{ show?: boolean }>`
+  display: ${props => (props.show ? "" : "none")};
+  color: #c30052;
+  font-size: 0.875rem;
 `;
 
 export const Dropdown = styled.div`
@@ -116,12 +123,12 @@ export const Button = styled("button")<{ show?: boolean }>`
   font-family: "Raleway";
   text-align: center;
   border: none;
-  border-radius: 1rem;
+  border-radius: 2.5rem;
   background-color: #ad93f3;
   color: #ffffff;
   cursor: pointer;
   font-size: 1rem;
-  margin-left: 3rem;
+  margin-right: 3rem;
   outline: none;
   display: ${props => (props.show ? "" : "none")};
 `;

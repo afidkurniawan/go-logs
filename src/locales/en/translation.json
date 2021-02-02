@@ -19,6 +19,7 @@
       "shipingline": "Shipping Line",
       "shippingLineSelected": "Select Shipping Line",
       "blinformation": "BL/Information",
+      "selectDate": "Select Date",
       "mblnumber": "MBL/HBL Number",
       "check": "Check",
       "uploadDocument": "Upload Document",
@@ -52,7 +53,8 @@
     "logout": "Logout"
   },
   "error": {
-    "content": "Something went wrong."
+    "content": "Something went wrong.",
+    "requiredField": "this field is required"
   },
   "companies": {
     "title": "Companies"
