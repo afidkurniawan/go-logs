@@ -29,6 +29,7 @@ export default function FormBL() {
   const [msgBox, showMsgBox] = useState(false);
   const [blNumber, setBlNumber] = useState("");
   const [blDate, setBlDate] = useState("");
+  const [showToast, setShowToast] = useState(false);
 
   const [getCargo, { loading, data }] = useLazyQuery(cargoQuery);
   if (loading) return <p>Loading ...</p>;
@@ -45,8 +46,10 @@ export default function FormBL() {
       });
       if (data) {
         setShowResults(true);
+        setShowToast(true);
       } else {
-        setShowResults(false);
+        setShowResults(true);
+        setShowToast(false);
       }
     }
     e.preventDefault();
@@ -59,7 +62,9 @@ export default function FormBL() {
     setBlNumber(e.target.value);
   };
 
-  const ResultWindow = showResults && data ? <Result data={data} /> : null;
+  const ResultWindow = showResults ? (
+    <Result data={data} found={showToast} />
+  ) : null;
 
   return (
     <>

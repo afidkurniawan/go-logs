@@ -124,7 +124,7 @@ export const Button = styled("button")<{ show?: boolean }>`
   text-align: center;
   border: none;
   border-radius: 2.5rem;
-  background-color: #ad93f3;
+  background-color: #5f2eea;
   color: #ffffff;
   cursor: pointer;
   font-size: 1rem;

@@ -1,22 +1,22 @@
 import styled from "styled-components/macro";
 
 export const Message = styled("div")<{ error?: boolean }>`
-  margin-top: 2%;
-  width: 90%;
-  height: 6vh;
-  background-color: ${props => (props.error ? "#EA5D5E" : "#00ba88")};
+  margin-top: 1rem;
+  width: 73rem;
+  height: 2.375rem;
+  background-color: ${props => (props.error ? "#ED2E7E" : "#00BA88")};
   text-align: center;
   vertical-align: middle;
   color: #ffffff;
-  font-size: 15px;
+  font-size: 1rem;
   font-weight: bold;
-  margin-bottom: 2%;
+  margin-bottom: 1rem;
 `;
 
 export const MessageTitle = styled.h4`
-  padding-top: 0.7em;
+  padding-top: 0.5em;
   color: "#ffffff";
-  font-size: 16px;
+  font-size: 1rem;
 `;
 
 export const Label = styled.p`
